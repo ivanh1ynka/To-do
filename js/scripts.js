@@ -66,4 +66,7 @@ function getDirection() {
   let direction = window.innerWidth <= 100 ? "vertical" : "horizontal";
   return direction;
 }
-;
+
+function scrollWin() {
+  window.scrollBy(0, 600);
+};
