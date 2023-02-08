@@ -646,7 +646,7 @@ body.locked {
 .contact__img {
   position: absolute;
   width: 400px;
-  right: -200px;
+  right: -300px;
   z-index: -1;
 }
 
