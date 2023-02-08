@@ -1,9 +1,9 @@
 // Custom Scripts
-
 function burgerMenu() {
   const burger = document.querySelector('.burger')
   const menu = document.querySelector('.menu')
   const body = document.querySelector('body')
+
   burger.addEventListener('click', () => {
     if (!menu.classList.contains('active')) {
       menu.classList.add('active')
@@ -15,9 +15,8 @@ function burgerMenu() {
       body.classList.remove('locked')
     }
   })
-  // mobile
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 991.98) {
+    if (window.innerWidth > 767.98) {
       menu.classList.remove('active')
       burger.classList.remove('active-burger')
       body.classList.remove('locked')
@@ -27,30 +26,44 @@ function burgerMenu() {
 burgerMenu()
 
 
-function fixedHeader() {
-  const header = document.querySelector('header')
-  const breakpoint = 10;
+function fixedNav() {
+  const nav = document.querySelector('nav')
+  const breakpoint = 500
   if (window.scrollY >= breakpoint) {
-    header.classList.add('fixed__header')
+    nav.classList.add('fixed')
   } else {
-    header.classList.remove('fixed__header')
+    nav.classList.remove('fixed')
   }
 }
-window.addEventListener('scroll', fixedHeader)
+window.addEventListener('scroll', fixedNav)
 ;
-const swiper = new Swiper('.swiper', {
-	autoplay: {
-		delay: 4000,
-	},
-  slidesPerView: 1,
-  spaceBetween: 0,
+let swiper = new Swiper(".swiper", {
+  slidesPerView: perView(),
   loop: true,
-  pagination: {
-  	el: ".swiper-pagination",
-    clickable: true,
+  freeMode: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  direction: getDirection(),
+
+
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
   },
-});;
+});
+
+function perView() {
+	let slidesMob = window.innerWidth <= 768 ? 3 : 5;
+	return slidesMob;
+}
+perView();
+
+function getDirection() {
+  let windowWidth = window.innerWidth;
+  let direction = window.innerWidth <= 100 ? "vertical" : "horizontal";
+  return direction;
+}
+;
