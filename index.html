@@ -16,13 +16,13 @@
 	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
 	<!-- ===== swiper ===== -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<!-- ===== gstatic ===== -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!-- ===== iconsfont ===== -->
 	<link rel="stylesheet" href="./scss/iconsfont.css">
 	<!-- ===== style ===== -->
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 					<ul class="menu-list">
 						<li class="menu__item">							
 							<a href="#hero" class="menu__link-logo logo-link">
-								<img src="" class="logo">
+								<img src="./img/logo.png" alt="" class="logo">
 							</a>
 						</li>
 						<li class="menu__item">
@@ -69,7 +69,7 @@
 			<div class="hero__wrapper">
 				<div class="hero__item">
 					<div class="hero__text">
-						<img src="./img/logo.png" class="hero__logo">
+						<img src="./img/logo.png" alt="" class="hero__logo">
 						<h1 class="hero__title title">welcome</h1>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 			<div class="work__item">
 				<a href="https://ivanh1ynka.github.io/Furni/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/furni.png">
+						<img class="work__img" src="./img/furni.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Furni</h1>
@@ -109,7 +109,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/PaymentOS/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/payment.png">
+						<img class="work__img" src="./img/payment.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Payment</h1>
@@ -117,7 +117,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/ojjo/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/ojjo.png">
+						<img class="work__img" src="./img/OJJO.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Ojjo</h1>
@@ -125,7 +125,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/Casino/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/casino.png">						
+						<img class="work__img" src="./img/Casino.png" alt="">					
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Casino</h1>
@@ -133,7 +133,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/Portfolio/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/welcome.png">
+						<img class="work__img" src="./img/welcome.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Welcome</h1>
@@ -141,7 +141,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/ItTeam/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/team.png">
+						<img class="work__img" src="./img/team.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">It-team</h1>
@@ -162,14 +162,14 @@
 					<div class="swiper-slide"><i class="fa-brands fa-js"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-sass"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-bootstrap"></i></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/jquery.png"></i></div>
+					<div class="swiper-slide"><img class="skill__img" src="./img/jquery.png" alt=""></div>
 					<div class="swiper-slide"><i class="fa-brands fa-gulp"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-github"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-wordpress"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-angular"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-react"></i></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/figma.png"></i></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/psd.png"></i></div>
+					<div class="swiper-slide"><img class="skill__img" src="./img/figma.png" alt=""></div>
+					<div class="swiper-slide"><img class="skill__img" src="./img/psd.png" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -183,22 +183,23 @@
 				<form class="contact__form" method="post" id="contact_form">
 					<h1 class="contact__title title">Contact with me:</h1>
 					<label for="userName" class="contact__label">Name:
-						<input type="text" name="userName" class="contact__input" placeholder="You'r name">
+						<input type="text" id="userName" name="userName" class="contact__input" placeholder="You'r name">
 					</label>
 					<label for="userEmail" class="contact__label">Email:
-						<input type="email" name="userEmail" class="contact__input" placeholder="You'r email">
+						<input type="email" id="userEmail" name="userEmail" class="contact__input" placeholder="You'r email">
 					</label>
 					<label for="textarea" class="contact__label">Message:
-						<textarea class="contact__text" name="textarea" id="contact_textarea" rows="5"
+						<textarea class="contact__text" id="textarea" name="textarea" id="contact_textarea" rows="5"
 							placeholder="You'r message"></textarea>
 					</label>
-					<label for="textarea" class="contact__label button">
-						<input type="submit" name="submit" class="contact__input-btn button-btn" placeholder="Send">
+					<label for="submit" class="contact__label button">
+						<input type="submit" id="submit" name="submit" class="contact__input-btn button-btn">
+						<!-- placeholder="Send" -->
 					</label>
 				</form>
 			</div>
 			<div class="contact__item">
-				<img class="contact__img" src="./img/contact.svg">
+				<img class="contact__img" src="./img/contact.svg" alt="">
 			</div>
 		</div>
 	</div>
@@ -247,7 +248,7 @@
 				<div class="footer__row">
 					<p class="footer__text text">Ivan Hlynka</p>
 					<a href="#" class="menu__link-logo logo-link">
-						<img src="./img/logo.png" alt="" class="logo mob-logo">
+						<img class="logo mob-logo" src="./img/logo.png" alt="">
 					</a>
 				</div>
 			</div>
@@ -257,6 +258,6 @@
 </body>
 
 <!-- ===== scripts ===== -->
-<script src="./js/scripts.js"></script>
+<script src="./js/scripts.min.js"></script>
 
 </html>

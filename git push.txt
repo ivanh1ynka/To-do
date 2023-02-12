@@ -1,6 +1,0 @@
-git init
-git add .
-git commit -m "welcome v1.0"
-git remote add origin https://github.com/ivanh1ynka/Portfolio.git
-git push --set-upstream origin master 
-git push origin master --force
