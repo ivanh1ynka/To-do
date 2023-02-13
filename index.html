@@ -5,13 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Ivan Hlynka</title>
-
 	<!-- GoogleFonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto+Mono:wght@400;700&display=swap"
+		rel="stylesheet">
 	<!-- ===== fontawesome ===== -->
 	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
 	<!-- ===== swiper ===== -->
@@ -28,37 +27,38 @@
 <body>
 	<!-- ===== header ===== -->
 	<header class="header">
-	<nav class="nav">
+	<nav class="header__nav">
 		<div class="container">
-			<div class="navbar">
-				<div class="menu">
-					<ul class="menu-list">
-						<li class="menu__item">							
-							<a href="#hero" class="menu__link-logo logo-link">
-								<img src="./img/logo.png" alt="" class="logo">
-							</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#work">portfolio</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#skill">skill</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#contact">contact</a>
-						</li>
+			<div class="header__navbar">
+				<div class="header__menu">
+					<ul class="header__list">
+						<li class="header__item"><a class="header__link" href="#portfolio" ket="portfolio">
+								portfolio
+							</a></li>
+						<li class="header__item"><a class="header__link" href="#skill" ket="skill">
+								skill
+							</a></li>
+						<li class="header__item"><a class="header__link" href="#contact" ket="contact">
+								contact
+							</a></li>
 					</ul>
-					<ul class="menu-list menu-contact">
-						<li class="menu__item">
-							<a class="menu__link" href="tel:"><i class="menu__i fa-solid fa-phone"></i></a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="mailto:"><i class="menu__i fa-solid fa-envelope"></i></a>
-						</li>
+					<ul class="header__list menu-contact">
+						<li class="header__item"><a class="header__link">
+								<button class="translate">En</button>
+							</a></li>
+						<li class="header__item"><a class="header__link">
+								<button class="translate">Ua</button>
+							</a></li>
+						<li class="header__item"><a class="header__link" href="tel:">
+								<i class="fa-solid fa-phone"></i>
+							</a></li>
+						<li class="header__item"><a class="header__link" href="mailto:">
+								<i class="fa-solid fa-envelope"></i>
+							</a></li>
 					</ul>
 				</div>
-				<div class="burger">
-					<span></span>
+				<div class="header__burger">
+					<span class="header__span"></span>
 				</div>
 			</div>
 		</div>
@@ -69,13 +69,13 @@
 			<div class="hero__wrapper">
 				<div class="hero__item">
 					<div class="hero__text">
-						<img src="./img/logo.png" alt="" class="hero__logo">
+						<img class="hero__logo" src="./img/logo.png" alt="logo">
 						<h1 class="hero__title title">welcome</h1>
 					</div>
 				</div>
 				<div class="hero__item">
 					<div class="hero__button button">
-						<button onclick="scrollWin()" class="hero__button-btn button-btn">go next</button>
+						<button onclick="scrollWin()" class="hero__btn btn">go next</button>
 					</div>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 			<h1 class="service__title title">Ефективне виконнання ваших замовлень.</h1>
 			<p class="service__text text">Зв'яжіться з нами заповнивши форму даних</p>
 			<div class="service__button button">
-				<a href="#contact" class="service__button-btn button-btn">форма</a>
+				<a href="#contact" class="service__btn btn">форма</a>
 			</div>
 		</div>
 	</div>
@@ -216,47 +216,43 @@
 					<p class="footer__text text">Created in 2023.</p>
 				</div>
 			</div>
-			<div class="footer__column column-link">
+			<div class="footer__column">
 				<div class="footer__row">
 					<ul class="footer__menu">
-						<li class="menu__item">
-							<a href="http://surl.li/etjuw" class="menu__link">
-								<i class="menu__i fa-brands fa-linkedin"></i>
+						<li class="footer__item">
+							<a href="http://surl.li/etjuw" class="footer__link">
+								<i class="fa-brands fa-linkedin"></i>
 							</a>
 						</li>
-						<li class="menu__item">
-							<a href="https://github.com/ivanh1ynka" class="menu__link">
-								<i class="menu__i fa-brands fa-github"></i>
+						<li class="footer__item">
+							<a href="https://github.com/ivanh1ynka" class="footer__link">
+								<i class="fa-brands fa-github"></i>
 							</a>
 						</li>
-						<li class="menu__item">
-							<a href="facebook.com" class="menu__link">
-								<i class="menu__i fa-brands fa-facebook"></i>
+						<li class="footer__item">
+							<a href="facebook.com" class="footer__link">
+								<i class="fa-brands fa-facebook"></i>
 							</a>
 						</li>
-						<li class="menu__item">
-							<a href="tel:380969002300" class="menu__link">
-								<i class="menu__i fa-solid fa-phone"></i>
+						<li class="footer__item">
+							<a href="tel:380969002300" class="footer__link">
+								<i class="fa-solid fa-phone"></i>
 							</a>
 						</li>
-						<li class="menu__item">
-							<a href="mailto:ivanglinka20@gmail.com" class="menu__link">
-								<i class="menu__i fa-solid fa-envelope"></i></a>
+						<li class="footer__item">
+							<a href="mailto:ivanglinka20@gmail.com" class="footer__link">
+								<i class="fa-solid fa-envelope"></i></a>
 						</li>
 					</ul>
 				</div>
-				<div class="footer__row">
+				<div class="footer__row row-end">
 					<p class="footer__text text">Ivan Hlynka</p>
-					<a href="#" class="menu__link-logo logo-link">
-						<img class="logo mob-logo" src="./img/logo.png" alt="">
-					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-	
-	
 	<script src="./js/scripts.min.js"></script>
 </body>
+
 </html>

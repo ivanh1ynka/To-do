@@ -1,7 +1,7 @@
 // Custom Scripts
 function burgerMenu() {
-  const burger = document.querySelector('.burger')
-  const menu = document.querySelector('.menu')
+  const burger = document.querySelector('.header__burger')
+  const menu = document.querySelector('.header__menu')
   const body = document.querySelector('body')
 
   burger.addEventListener('click', () => {
@@ -23,11 +23,11 @@ function burgerMenu() {
     }
   })
 }
-burgerMenu()
+burgerMenu();
 
 
 function fixedNav() {
-  const nav = document.querySelector('nav')
+  const nav = document.querySelector('header__nav')
   const breakpoint = 500
   if (window.scrollY >= breakpoint) {
     nav.classList.add('fixed')
@@ -35,7 +35,7 @@ function fixedNav() {
     nav.classList.remove('fixed')
   }
 }
-window.addEventListener('scroll', fixedNav)
+window.addEventListener('scroll', fixedNav);
 ;
 let swiper = new Swiper(".swiper", {
   slidesPerView: perView(),
@@ -69,4 +69,36 @@ function getDirection() {
 
 function scrollWin() {
   window.scrollBy(0, 600);
+}
+
+var x = {
+  'en': {
+    'portfolio': 'About Us',
+    'skill': 'Goods',
+    'contact': 'Benefits',
+  },
+  'ua': {
+    'portfolio': 'Портфолио',
+    'skill': 'Навички',
+    'contact': 'Контакти',
+  }
 };
+
+function land() {
+	let land  = document.querySelector(".land");
+	let btnTranslate  = document.querySelector(".translate");
+	
+}
+$(function() {
+  $('.translate').click(function() {
+    var lang = $(this).attr('id');
+
+		$('.land').each(function(index, item) {
+    $(this).text(x[lang][$(this).attr('key')]);
+    });
+  });
+});
+
+
+
+;
