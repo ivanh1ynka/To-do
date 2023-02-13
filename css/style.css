@@ -172,9 +172,12 @@ body.locked {
 }
 
 .header__nav {
-  height: 64px;
-  max-width: 100vw;
-  padding: 10px 0;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  background: rgba(150, 150, 150, 0.7);
+  z-index: 9;
 }
 
 .header__nav-fixed {

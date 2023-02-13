@@ -18,10 +18,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<!-- ===== gstatic ===== -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- ===== iconsfont ===== -->
-	<link rel="stylesheet" href="./scss/iconsfont.css">
 	<!-- ===== style ===== -->
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -33,21 +31,21 @@
 				<div class="header__menu">
 					<ul class="header__list">
 						<li class="header__item">
-							<a class="header__link" href="#portfolio">portfolio</a>
+							<a class="header__link lang" href="#portfolio" key="portfolio">portfolio</a>
 						</li>
 						<li class="header__item">
-							<a class="header__link" href="#skill">skill</a>
+							<a class="header__link lang" href="#skill" key="skill">skill</a>
 						</li>
 						<li class="header__item">
-							<a class="header__link" href="#contact">contact</a>
+							<a class="header__link lang" href="#contact" key="contact">contact</a>
 						</li>
 					</ul>
 					<ul class="header__list menu-contact">
 						<li class="header__item">
-							<button class="header__link translate">En</button>
+							<button class="header__link translate" id="en">En</button>
 						</li>
 						<li class="header__item">
-							<button class="header__link translate">Ua</button>
+							<button class="header__link translate" id="ua">Ua</button>
 						</li>
 						<li class="header__item">
 							<a class="header__link" href="tel:"><i class="fa-solid fa-phone"></i></a>
@@ -70,12 +68,12 @@
 				<div class="hero__item">
 					<div class="hero__text">
 						<img class="hero__logo" src="./img/logo.png" alt="logo">
-						<h1 class="hero__title title">welcome</h1>
+						<h1 class="hero__title title lang" key="welcome">welcome</h1>
 					</div>
 				</div>
 				<div class="hero__item">
 					<div class="hero__button button">
-						<button onclick="scrollWin()" class="hero__btn btn">go next</button>
+						<button onclick="scrollWin()" class="hero__btn btn lang" key="heroBtn">go next</button>
 					</div>
 				</div>
 			</div>
@@ -86,16 +84,16 @@
 	<section class="service" id="service">
 	<div class="container">
 		<div class="service__wrapper">
-			<h1 class="service__title title">Ефективне виконнання ваших замовлень.</h1>
-			<p class="service__text text">Зв'яжіться з нами заповнивши форму даних</p>
+			<h1 class="service__title title lang" key="service__title">Efficient fulfillment of your orders.</h1>
+			<p class="service__text text lang" key="service__text">Contact us by filling out the data form.</p>
 			<div class="service__button button">
-				<a href="#contact" class="service__btn btn">форма</a>
+				<a class="service__btn btn lang" href="#contact" key="service__btn">form</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="work" id="work">
+<section class="work" id="portfolio">
 	<div class="container">
 		<div class="work__wrapper">
 			<div class="work__item">
@@ -125,7 +123,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/Casino/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/Casino.png" alt="">					
+						<img class="work__img" src="./img/Casino.png" alt="">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Casino</h1>
@@ -181,20 +179,18 @@
 		<div class="contact__wrapper">
 			<div class="contact__item">
 				<form class="contact__form" method="post" id="contact_form">
-					<h1 class="contact__title title">Contact with me:</h1>
-					<label for="userName" class="contact__label">Name:
-						<input type="text" id="userName" name="userName" class="contact__input" placeholder="You'r name">
+					<h1 class="contact__title title lang" key="contact__title">Contact with me:</h1>
+					<label for="userName" class="contact__label lang" key="name">Name:
 					</label>
-					<label for="userEmail" class="contact__label">Email:
-						<input type="email" id="userEmail" name="userEmail" class="contact__input" placeholder="You'r email">
+					<input type="text" id="userName" name="userName" class="contact__input">
+					<label for="userEmail" class="contact__label lang" key="email">Email:
 					</label>
-					<label for="textarea" class="contact__label">Message:
-						<textarea class="contact__text" id="textarea" name="textarea" rows="5"
-							placeholder="You'r message"></textarea>
+					<input type="email" id="userEmail" name="userEmail" class="contact__input">
+					<label for="textarea" class="contact__label lang" key="message">Message:
 					</label>
+					<textarea class="contact__text" id="textarea" name="textarea" rows="5"></textarea>
 					<label for="submit" class="contact__label button">
-						<input type="submit" id="submit" name="submit" class="contact__input-btn button-btn">
-						<!-- placeholder="Send" -->
+						<input type="submit" id="submit" name="submit" class="contact__input-btn btn">
 					</label>
 				</form>
 			</div>
@@ -210,10 +206,10 @@
 		<div class="footer__wrapper">
 			<div class="footer__column">
 				<div class="footer__row">
-					<p class="footer__text text">You can also contact me on social networks.</p>
+					<p class="footer__text text lang" key="footer__text">You can also contact me on social networks.</p>
 				</div>
 				<div class="footer__row">
-					<p class="footer__text text">Created in 2023.</p>
+					<p class="footer__text text lang" key="footer__date">Created in 2023.</p>
 				</div>
 			</div>
 			<div class="footer__column">
@@ -246,13 +242,13 @@
 					</ul>
 				</div>
 				<div class="footer__row row-end">
-					<p class="footer__text text">Ivan Hlynka</p>
+					<p class="footer__text text lang" key="footer__name">Ivan Hlynka</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-	<script src="./js/scripts.min.js"></script>
+	<script src="./js/scripts.js"></script>
 </body>
 
 </html>
