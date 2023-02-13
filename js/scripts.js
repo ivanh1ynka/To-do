@@ -71,34 +71,4 @@ function scrollWin() {
   window.scrollBy(0, 600);
 }
 
-var x = {
-  'en': {
-    'portfolio': 'About Us',
-    'skill': 'Goods',
-    'contact': 'Benefits',
-  },
-  'ua': {
-    'portfolio': 'Портфолио',
-    'skill': 'Навички',
-    'contact': 'Контакти',
-  }
-};
-
-function land() {
-	let land  = document.querySelector(".land");
-	let btnTranslate  = document.querySelector(".translate");
-	
-}
-$(function() {
-  $('.translate').click(function() {
-    var lang = $(this).attr('id');
-
-		$('.land').each(function(index, item) {
-    $(this).text(x[lang][$(this).attr('key')]);
-    });
-  });
-});
-
-
-
 ;
