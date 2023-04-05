@@ -99,7 +99,7 @@
 			<div class="work__item">
 				<a href="https://ivanh1ynka.github.io/Furni/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/furni.png" alt="">
+						<img class="work__img" src="./img/furni.png" alt="furni">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Furni</h1>
@@ -107,7 +107,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/PaymentOS/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/payment.png" alt="">
+						<img class="work__img" src="./img/payment.png" alt="payment">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Payment</h1>
@@ -115,7 +115,7 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/ojjo/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/OJJO.png" alt="">
+						<img class="work__img" src="./img/OJJO.png" alt="OJJO">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Ojjo</h1>
@@ -123,26 +123,26 @@
 				</a>
 				<a href="https://ivanh1ynka.github.io/Casino/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/Casino.png" alt="">
+						<img class="work__img" src="./img/Casino.png" alt="Casino">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Casino</h1>
 					</div>
 				</a>
-				<a href="https://ivanh1ynka.github.io/Portfolio/" class="work__column">
+				<a href="https://ivanh1ynka.github.io/weather/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/welcome.png" alt="">
+						<img class="work__img" src="./img/weather.png" alt="weather">
 					</div>
 					<div class="work__text">
 						<h1 class="work__title title">Welcome</h1>
 					</div>
 				</a>
-				<a href="https://ivanh1ynka.github.io/ItTeam/" class="work__column">
+				<a href="https://ivanh1ynka.github.io/HooBank/" class="work__column">
 					<div class="work__image">
-						<img class="work__img" src="./img/team.png" alt="">
+						<img class="work__img" src="./img/HooBank.png" alt="HooBank">
 					</div>
 					<div class="work__text">
-						<h1 class="work__title title">It-team</h1>
+						<h1 class="work__title title">HooBank</h1>
 					</div>
 				</a>
 			</div>
@@ -165,7 +165,6 @@
 					<div class="swiper-slide"><i class="fa-brands fa-github"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-wordpress"></i></div>
 					<div class="swiper-slide"><i class="fa-brands fa-angular"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-react"></i></div>
 					<div class="swiper-slide"><img class="skill__img" src="./img/figma.png" alt=""></div>
 					<div class="swiper-slide"><img class="skill__img" src="./img/psd.png" alt=""></div>
 				</div>
@@ -178,21 +177,25 @@
 	<div class="container">
 		<div class="contact__wrapper">
 			<div class="contact__item">
-				<form class="contact__form" method="post" id="contact_form">
-					<h1 class="contact__title title lang" key="contact__title">Contact with me:</h1>
-					<label for="userName" class="contact__label lang" key="name">Name:
-					</label>
-					<input type="text" id="userName" name="userName" class="contact__input">
-					<label for="userEmail" class="contact__label lang" key="email">Email:
-					</label>
-					<input type="email" id="userEmail" name="userEmail" class="contact__input">
-					<label for="textarea" class="contact__label lang" key="message">Message:
-					</label>
-					<textarea class="contact__text" id="textarea" name="textarea" rows="5"></textarea>
-					<label for="submit" class="contact__label button">
-						<input type="submit" id="submit" name="submit" class="contact__input-btn btn">
-					</label>
+
+				<form class="contact__form" id="form">
+
+					<div class="contact__info">
+						<h1 class="contact__title title lang" key="contact__title">Contact with me:</h1>
+					</div>
+					<label for="Name" class="contact__label req lang" key="name">Name:</label>
+					<input id="Name" type="text" name="name" class="contact__input">
+
+					<label for="Email" class="contact__label req email lang" key="email">Email:</label>
+					<input id="Email" type="email" name="email" class="contact__input">
+
+					<label for="Message" class="contact__label lang" key="message">Message:</label>
+					<textarea id="Message" name="mesage" rows="5" class="contact__text"></textarea>
+
+					<button class="contact__btn button" type="submit">Send</button>
+
 				</form>
+
 			</div>
 			<div class="contact__item">
 				<img class="contact__img" src="./img/contact.svg" alt="">
@@ -206,7 +209,7 @@
 		<div class="footer__wrapper">
 			<div class="footer__column">
 				<div class="footer__row">
-					<p class="footer__text text lang" key="footer__text">You can also contact me on social networks.</p>
+					<p class="footer__text text lang" key="footer__text">You can also contact me on social media.</p>
 				</div>
 				<div class="footer__row">
 					<p class="footer__text text lang" key="footer__date">Created in 2023.</p>
@@ -248,6 +251,7 @@
 		</div>
 	</div>
 </footer>
+	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 	<script src="./js/scripts.js"></script>
 </body>
 

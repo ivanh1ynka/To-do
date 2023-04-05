@@ -1,4 +1,5 @@
 // Custom Scripts
+"use strict"
 function burgerMenu() {
   const burger = document.querySelector('.header__burger')
   const menu = document.querySelector('.header__menu')
@@ -5870,7 +5871,7 @@ var arrLang = {
     placeholderMesage: "You'r message",
     placeholderBtn: "Send",
 
-    footer__text: "You can also contact me on social networks.",
+    footer__text: "You can also contact me on social media.",
     footer__date: "Created in 2023.",
     footer__name: "Ivan Hlynka",
   },
