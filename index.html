@@ -5,254 +5,36 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ivan Hlynka</title>
-	<!-- GoogleFonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Roboto+Mono:wght@400;700&display=swap"
-		rel="stylesheet">
-	<!-- ===== fontawesome ===== -->
+	<title>To do</title>
+	<link rel="shortcut icon" href="./img/ico.ico">
 	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
-	<!-- ===== swiper ===== -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-	<!-- ===== gstatic ===== -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- ===== style ===== -->
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 	<!-- ===== header ===== -->
-	<header class="header">
-	<nav class="header__nav">
-		<div class="container">
-			<div class="header__navbar">
-				<div class="header__menu">
-					<ul class="header__list">
-						<li class="header__item">
-							<a class="header__link lang" href="#portfolio" key="portfolio">portfolio</a>
-						</li>
-						<li class="header__item">
-							<a class="header__link lang" href="#skill" key="skill">skill</a>
-						</li>
-						<li class="header__item">
-							<a class="header__link lang" href="#contact" key="contact">contact</a>
-						</li>
-					</ul>
-					<ul class="header__list menu-contact">
-						<li class="header__item">
-							<button class="header__link translate" id="en">En</button>
-						</li>
-						<li class="header__item">
-							<button class="header__link translate" id="ua">Ua</button>
-						</li>
-						<li class="header__item">
-							<a class="header__link" href="tel:"><i class="fa-solid fa-phone"></i></a>
-						</li>
-						<li class="header__item">
-							<a class="header__link" href="mailto:"><i class="fa-solid fa-envelope"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="header__burger">
-					<span class="header__span"></span>
-				</div>
-			</div>
-		</div>
-	</nav>
-
-	<section class="hero" id="hero">
-		<div class="container">
-			<div class="hero__wrapper">
-				<div class="hero__item">
-					<div class="hero__text">
-						<img class="hero__logo" src="./img/logo.png" alt="logo">
-						<h1 class="hero__title title lang" key="welcome">welcome</h1>
-					</div>
-				</div>
-				<div class="hero__item">
-					<div class="hero__button button">
-						<button onclick="scrollWin()" class="hero__btn btn lang" key="heroBtn">go next</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</header>
+	
 	<!-- ===== main ===== -->
-	<section class="service" id="service">
+	<main class="main">
 	<div class="container">
-		<div class="service__wrapper">
-			<h1 class="service__title title lang" key="service__title">Efficient fulfillment of your orders.</h1>
-			<p class="service__text text lang" key="service__text">Contact us by filling out the data form.</p>
-			<div class="service__button button">
-				<a class="service__btn btn lang" href="#contact" key="service__btn">form</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="work" id="portfolio">
-	<div class="container">
-		<div class="work__wrapper">
-			<div class="work__item">
-				<a href="https://ivanh1ynka.github.io/Furni/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/furni.png" alt="furni">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">Furni</h1>
-					</div>
-				</a>
-				<a href="https://ivanh1ynka.github.io/PaymentOS/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/payment.png" alt="payment">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">Payment</h1>
-					</div>
-				</a>
-				<a href="https://ivanh1ynka.github.io/ojjo/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/OJJO.png" alt="OJJO">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">Ojjo</h1>
-					</div>
-				</a>
-				<a href="https://ivanh1ynka.github.io/Casino/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/Casino.png" alt="Casino">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">Casino</h1>
-					</div>
-				</a>
-				<a href="https://ivanh1ynka.github.io/weather/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/weather.png" alt="weather">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">Welcome</h1>
-					</div>
-				</a>
-				<a href="https://ivanh1ynka.github.io/HooBank/" class="work__column">
-					<div class="work__image">
-						<img class="work__img" src="./img/HooBank.png" alt="HooBank">
-					</div>
-					<div class="work__text">
-						<h1 class="work__title title">HooBank</h1>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="skill" id="skill">
-	<div class="skill__wrapper">
-		<div class="slill__item">
-			<div class="swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><i class="fa-brands fa-html5"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-css3-alt"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-js"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-sass"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-bootstrap"></i></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/jquery.png" alt=""></div>
-					<div class="swiper-slide"><i class="fa-brands fa-gulp"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-github"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-wordpress"></i></div>
-					<div class="swiper-slide"><i class="fa-brands fa-angular"></i></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/figma.png" alt=""></div>
-					<div class="swiper-slide"><img class="skill__img" src="./img/psd.png" alt=""></div>
+		<div class="content">
+			<h1 class="content__title">My to do list</h1>
+			<div class="content__box">
+				<div class="content__input-box">
+					<input type="text" class="content__input" placeholder="Введіть задачу">
+				</div>
+				<div class="content__output">
+					<ul class="output__lists"></ul>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
-
-<section class="contact" id="contact">
-	<div class="container">
-		<div class="contact__wrapper">
-			<div class="contact__item">
-
-				<form class="contact__form" id="form">
-
-					<div class="contact__info">
-						<h1 class="contact__title title lang" key="contact__title">Contact with me:</h1>
-					</div>
-					<label for="Name" class="contact__label req lang" key="name">Name:</label>
-					<input id="Name" type="text" name="name" class="contact__input">
-
-					<label for="Email" class="contact__label req email lang" key="email">Email:</label>
-					<input id="Email" type="email" name="email" class="contact__input">
-
-					<label for="Message" class="contact__label lang" key="message">Message:</label>
-					<textarea id="Message" name="mesage" rows="5" class="contact__text"></textarea>
-
-					<button class="contact__btn button" type="submit">Send</button>
-
-				</form>
-
-			</div>
-			<div class="contact__item">
-				<img class="contact__img" src="./img/contact.svg" alt="">
-			</div>
-		</div>
 	</div>
-</section>
+</main>
 	<!-- ===== footer ===== -->
-	<footer class="footer" id="footer">
-	<div class="container">
-		<div class="footer__wrapper">
-			<div class="footer__column">
-				<div class="footer__row">
-					<p class="footer__text text lang" key="footer__text">You can also contact me on social media.</p>
-				</div>
-				<div class="footer__row">
-					<p class="footer__text text lang" key="footer__date">Created in 2023.</p>
-				</div>
-			</div>
-			<div class="footer__column">
-				<div class="footer__row">
-					<ul class="footer__menu">
-						<li class="footer__item">
-							<a href="http://surl.li/etjuw" class="footer__link">
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-						</li>
-						<li class="footer__item">
-							<a href="https://github.com/ivanh1ynka" class="footer__link">
-								<i class="fa-brands fa-github"></i>
-							</a>
-						</li>
-						<li class="footer__item">
-							<a href="facebook.com" class="footer__link">
-								<i class="fa-brands fa-facebook"></i>
-							</a>
-						</li>
-						<li class="footer__item">
-							<a href="tel:380969002300" class="footer__link">
-								<i class="fa-solid fa-phone"></i>
-							</a>
-						</li>
-						<li class="footer__item">
-							<a href="mailto:ivanglinka20@gmail.com" class="footer__link">
-								<i class="fa-solid fa-envelope"></i></a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__row row-end">
-					<p class="footer__text text lang" key="footer__name">Ivan Hlynka</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-	<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-	<script src="./js/scripts.js"></script>
+	
 </body>
+
+<script src="./js/scripts.js"></script>
 
 </html>
